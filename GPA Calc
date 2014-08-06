@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+	double gpa = 0;
+	double classes = 0;
+	string input;
+		
+	int inputcnt=0;
+
+	do {
+
+		std::cout << "Input grade: ";
+			cin >> input;
+
+		inputcnt++;
+		char grade = input.at(0);
+
+		switch (grade)
+		{
+			case 'A':
+			case 'a':
+				gpa+=4.0; 
+				break; 
+			case 'B':
+			case 'b':
+				gpa+=3.0; 
+				break;
+			case 'C':
+			case 'c':
+				gpa+=2.0;
+				break;
+			case 'D':
+			case 'd':
+				gpa+=1.0;
+				break;
+			case 'F':
+			case 'f': 
+				gpa+=0.0; 
+				break; 
+			default:
+				std::cout << "Input must be: A, B, C, D, F" << endl;	
+
+		}
+	} while (input != "EXIT");
+	
+	inputcnt--;
+
+	std::cout << gpa / inputcnt << endl; 
+	system ("PAUSE");
+
+}
