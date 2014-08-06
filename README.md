@@ -1,6 +1,6 @@
-hello-world
+GPA Calculator
 ===========
 
 First repository on Github
 
-I love :coffee:, :pizza:, and a :dancer:.
+Produces the GPA for the semester.  
